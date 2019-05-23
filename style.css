@@ -9,23 +9,51 @@ header {
     display: inline-block;
     font-size: 1.5rem;
 
+
 }
 
 aside {
+    text-align: center;
     border: 1px solid black;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+aside > p {
+
+
+    text-align: center;
+
 }
 
 aside * p {
+    margin: 5px auto;
     border: 1px solid black;
-    display: inline-block;
     text-align: center;
+    width: 50%;
     background-color: #5bc0de;
+    padding: 20px;
+}
+
+.stats-boxes{
 
 }
 
-div {
+main {
     border: 1px solid black;
+    display: inline-block;
+    height: 100%;
+    width: 79%;
+
+}
+
+.card {
+    background-color: black;
+    height: 156px;
+    width: 150px;
+    padding: 2px;
+    display: inline-block;
 
 
-    
 }
