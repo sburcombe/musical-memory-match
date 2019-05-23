@@ -1,7 +1,10 @@
-* {
-    background-image: url("../blind-robot.jpg");
+body {
+    background-image: url("../images/blind-robot.jpg");
     background-repeat: no-repeat;
     background-color: #f7e1b5;
+    background-position: center;
+    background-size: cover;
+
 }
 
 header {
@@ -39,9 +42,7 @@ aside * p {
     padding: 20px;
 }
 
-.stats-boxes{
 
-}
 
 main {
     border: 1px solid black;
@@ -51,22 +52,40 @@ main {
 
 }
 
-.card, .front-card {
-    background-color: black;
-    height: 156px;
-    width: 150px;
+.card {
+    background-color: greenyellow;
+    height: 180px;
+    width: 154px;
     padding: 2px;
     display: inline-block;
+
 
 
 }
 
-div:nth-child(1) {
+.back-card {
     background-image : url("../images/andy.jpg");
     background-color: black;
+    background-size: cover;
     height: 156px;
     width: 150px;
     padding: 2px;
     display: inline-block;
+    position: absolute;
 
+}
+
+.front-card{
+    background-image: url("../images/lfz-card.jpg");
+    background-color: black;
+    background-size: cover;
+    height: 156px;
+    width: 150px;
+    padding: 2px;
+    display: inline-block;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
 }
