@@ -63,8 +63,9 @@ main {
 
 }
 
-.back-card {
-    background-image : url("../images/andy.jpg");
+
+.front-card {
+
     background-color: black;
     background-size: cover;
     height: 156px;
@@ -75,12 +76,23 @@ main {
 
 }
 
-.front-card{
+.andy{
+
+    background-image : url("../images/andy.jpg");
+}
+
+
+.cody {
+
+    background-image : url("../images/cody.jpg");
+}
+
+.back-card{
     background-image: url("../images/lfz-card.jpg");
     background-color: black;
     background-size: cover;
-    height: 156px;
-    width: 150px;
+    height: 156px;/*100%*/
+    width: 150px; /*100%*/
     padding: 2px;
     display: inline-block;
     position: absolute;
