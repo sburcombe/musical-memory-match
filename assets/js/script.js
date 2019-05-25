@@ -3,6 +3,7 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
+var max_matches = 2;
 
 
 
@@ -11,10 +12,15 @@ function initializeApp() {
     $(".card").click(handleCardClick);
 
 
+
 }
 
 
 function handleCardClick(event) {
+
+   // if (it has a matched class){
+   //      return;
+   //  };
 
     if (firstCardClicked === null){
 
@@ -30,26 +36,44 @@ function handleCardClick(event) {
         secondCardClicked.find("div.back-card").addClass("hidden");
         var revealedCardClick1 = firstCardClicked.find("div.front-card").css("background-image");
         var revealedCardClick2 = secondCardClicked.find("div.front-card").css("background-image");
-        console.log("card 2 click ",revealedCardClick2)
+        console.log("card 2 click ",revealedCardClick2);
 
         if (revealedCardClick1 === revealedCardClick2){
 
             console.log("cards match");
             matches++;
-            console.log("Current matches: ",matches)
+            //add class of matched
+            console.log("Current matches: ",matches);
+            firstCardClicked = null;
+            secondCardClicked = null;
+
         } else {
                 setTimeout(function(){
                     firstCardClicked.find("div.back-card").removeClass("hidden");
                     secondCardClicked.find("div.back-card").removeClass("hidden");
+                    firstCardClicked = null;
+                    secondCardClicked = null;
                 }, 1500);
+                //if they have the class of match, return
+
 
 
             console.log("No match");
 
         }
+            if (matches === max_matches){
+                function displayWinModal(){
+                    $("#winModalContainer").removeClass("hidden");
+
+                }
+                displayWinModal();
+
+
+                }
+            };
     }
 
 
-};
+
 
 //
