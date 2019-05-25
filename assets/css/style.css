@@ -98,6 +98,40 @@ main {
     position: absolute;
 }
 
+
+.modalShadow{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.winModal {
+    background-color: #5bc0de;
+    color: black;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+
+
+}
+.replayInvite{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    /*position: absolute;*/
+    /*top: 70%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    padding: 30px;
+}
+
 .hidden {
     display: none;
 }
