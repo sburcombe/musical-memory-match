@@ -86,6 +86,34 @@ main {
 
     background-image : url("../images/cody.jpg");
 }
+.bill {
+
+    background-image : url("../images/bill.jpg");
+}
+.brett {
+
+     background-image : url("../images/brett.jpg");
+ }
+.dan {
+
+    background-image : url("../images/dan.jpg");
+}
+.tj {
+
+    background-image : url("../images/tj.jpg");
+}
+.scott {
+
+    background-image : url("../images/scott.jpg");
+}
+.tim-d {
+
+    background-image : url("../images/tim-d.jpg");
+}
+.tim-h {
+
+    background-image : url("../images/tim-h.jpg");
+}
 
 .back-card{
     background-image: url("../images/lfz-card.jpg");
