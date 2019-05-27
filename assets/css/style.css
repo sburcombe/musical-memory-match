@@ -53,9 +53,8 @@ main {
 }
 
 .card {
-    background-color: greenyellow;
-    height: 180px;
-    width: 154px;
+    height: 156px;
+    width: 150px;
     padding: 2px;
     display: inline-block;
 
@@ -153,10 +152,6 @@ main {
 .replayInvite{
     background-color: rgba(0, 0, 0, .5);
     color: white;
-    /*position: absolute;*/
-    /*top: 70%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%, -50%);*/
     padding: 30px;
 }
 
