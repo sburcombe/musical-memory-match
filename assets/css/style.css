@@ -1,7 +1,8 @@
 body {
-    background-image: url("../images/blind-robot.jpg");
+    /* background-image: url("../images/blind-robot.jpg"); */
     background-repeat: no-repeat;
-    background-color: #f7e1b5;
+    /* background-color: #f7e1b5; */
+    background-color: black;
     background-position: center;
     background-size: cover;
 
@@ -11,11 +12,17 @@ header {
     height: 10vh;
     text-align: center;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: inline-block;
     font-size: 2rem;
+    color: whitesmoke;
+    font-family: 'Beth Ellen', cursive, sans-serif;
 
 
+}
+
+.container {
+    margin-top: 10px;
 }
 
 aside {
@@ -24,6 +31,8 @@ aside {
     width: 20%;
     display: inline-block;
     vertical-align: top;
+    font-family: 'Beth Ellen', cursive, sans-serif;
+    font-size: 14px;
 }
 
 aside > p {
@@ -38,14 +47,15 @@ aside * p {
     border: 1px solid black;
     text-align: center;
     width: 50%;
-    background-color: #5bc0de;
+    /* background-color: #5bc0de; */
+    background-color: #f7644a;
     padding: 20px;
 }
 
 
 
 main {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: inline-block;
     height: 100%;
     width: 79%;
@@ -57,9 +67,6 @@ main {
     width: 150px;
     padding: 2px;
     display: inline-block;
-
-
-
 }
 
 
@@ -75,47 +82,47 @@ main {
 
 }
 
-.andy{
+.vivaldi{
 
-    background-image : url("../images/andy.jpg");
+    background-image : url("../images/Vivaldi.png");
 }
 
 
-.cody {
+.tchaikovsky {
 
-    background-image : url("../images/cody.jpg");
+    background-image : url("../images/Tchaikovsky.png");
 }
-.bill {
+.saint-georges {
 
-    background-image : url("../images/bill.jpg");
+    background-image : url("../images/SaintGeorges.png");
 }
-.brett {
+.mozart {
 
-     background-image : url("../images/brett.jpg");
+     background-image : url("../images/Mozart.png");
  }
-.dan {
+.bonds {
 
-    background-image : url("../images/dan.jpg");
+    background-image : url("../images/MargaretBonds.png");
 }
-.tj {
+.price {
 
-    background-image : url("../images/tj.jpg");
+    background-image : url("../images/FlorencePrice.png");
 }
-.scott {
+.saint-saens {
 
-    background-image : url("../images/scott.jpg");
+    background-image : url("../images/SaintSaens.png");
 }
-.tim-d {
+.beethoven{
 
-    background-image : url("../images/tim-d.jpg");
+    background-image : url("../images/Beethoven.png");
 }
-.tim-h {
+.bach {
 
-    background-image : url("../images/tim-h.jpg");
+    background-image : url("../images/Bach.png");
 }
 
 .back-card{
-    background-image: url("../images/lfz-card.jpg");
+    background-image: url("../images/music.png");
     background-color: black;
     background-size: cover;
     height: 156px;/*100%*/
