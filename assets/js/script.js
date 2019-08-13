@@ -6,6 +6,7 @@ var matches = null;
 var max_matches = 9;
 var attempts = null;
 var games_played = null;
+var mozartSound = new Audio("../audio/Mozart.mp3");
 
 
 
@@ -22,7 +23,7 @@ function handleCardClick(event) {
 
    if($(this).hasClass("clicked")){
        return
-   };
+   }
 
     if (firstCardClicked === null){
 
@@ -46,6 +47,7 @@ function handleCardClick(event) {
             firstCardClicked = null;
             secondCardClicked = null;
             attempts++;
+            mozartSound.play();
             displayStats();
 
         } else {
@@ -64,7 +66,7 @@ function handleCardClick(event) {
         if (matches === max_matches){
 
             displayWinModal();
-        };
+        }
 
     function displayWinModal(){
 
@@ -72,23 +74,23 @@ function handleCardClick(event) {
         games_played++
         $("#games-played").text(games_played);
 
-            };
+            }
         }
 
-    };
+    }
 
 function calculateAccuracy(){
 
     var accuracyEquation = (matches / attempts).toFixed(2) * 100 + "%" ;
     return accuracyEquation ;
-};
+}
 function displayStats(){
 
     var calculateAverage = calculateAccuracy();
     $("#accuracy-calc").text(calculateAverage);
     $("#attempts").text(attempts);
 
-};
+}
 
 function resetStats(){
 
@@ -100,8 +102,4 @@ function resetStats(){
     $("#accuracy-calc").text(0 + "%");
     $("#attempts").text(0);
 
-};
-
-
-
-
+}
