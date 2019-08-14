@@ -6,7 +6,7 @@ var matches = null;
 var max_matches = 9;
 var attempts = null;
 var games_played = null;
-var mozartSound = new Audio("../audio/Mozart.mp3");
+var mozartSound = new Audio("../memory_match/assets/audio/Mozart.mp3");
 
 
 
@@ -42,13 +42,20 @@ function handleCardClick(event) {
         displayStats();
 
         if (revealedCardClick1 === revealedCardClick2){
-
+            // switch (firstCardClicked[0].childNodes[2]) {
+            //     case "div.front-card.mozart":
+            //         mozartSound.play();
+            //         break;
+            // }
             matches++;
             firstCardClicked = null;
             secondCardClicked = null;
             attempts++;
             mozartSound.play();
             displayStats();
+
+
+
 
         } else {
                 setTimeout(function(){
@@ -68,10 +75,10 @@ function handleCardClick(event) {
             displayWinModal();
         }
 
-    function displayWinModal(){
+ function displayWinModal(){
 
         $("#winModalContainer").removeClass("hidden");
-        games_played++
+        games_played++;
         $("#games-played").text(games_played);
 
             }
