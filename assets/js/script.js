@@ -7,6 +7,7 @@ var max_matches = 9;
 var attempts = null;
 var games_played = null;
 var mozartSound = new Audio("../memory_match/assets/audio/Mozart.mp3");
+var vivaldiSound = new Audio("../memory_match/assets/audio/Vivaldi.mp3");
 
 
 
@@ -46,6 +47,9 @@ function handleCardClick(event) {
             switch (cardChildNode.className) {
                 case "front-card mozart":
                     mozartSound.play();
+                    break;
+                case "front-card vivaldi":
+                    vivaldiSound.play();
                     break;
             }
             matches++;
