@@ -7,6 +7,7 @@ var max_matches = 9;
 var attempts = null;
 var games_played = null;
 var mozartSound = new Audio("../memory_match/assets/audio/Mozart.mp3");
+var vivaldiSound = new Audio("../memory_match/assets/audio/Vivaldi.mp3");
 
 
 
@@ -42,16 +43,20 @@ function handleCardClick(event) {
         displayStats();
 
         if (revealedCardClick1 === revealedCardClick2){
-            // switch (firstCardClicked[0].childNodes[2]) {
-            //     case "div.front-card.mozart":
-            //         mozartSound.play();
-            //         break;
-            // }
+            var cardChildNode = firstCardClicked[0].childNodes[2];
+            switch (cardChildNode.className) {
+                case "front-card mozart":
+                    mozartSound.play();
+                    break;
+                case "front-card vivaldi":
+                    vivaldiSound.play();
+                    break;
+            }
             matches++;
             firstCardClicked = null;
             secondCardClicked = null;
             attempts++;
-            mozartSound.play();
+            // mozartSound.play();
             displayStats();
 
 
