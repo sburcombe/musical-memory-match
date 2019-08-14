@@ -42,16 +42,17 @@ function handleCardClick(event) {
         displayStats();
 
         if (revealedCardClick1 === revealedCardClick2){
-            // switch (firstCardClicked[0].childNodes[2]) {
-            //     case "div.front-card.mozart":
-            //         mozartSound.play();
-            //         break;
-            // }
+            var cardChildNode = firstCardClicked[0].childNodes[2];
+            switch (cardChildNode.className) {
+                case "front-card mozart":
+                    mozartSound.play();
+                    break;
+            }
             matches++;
             firstCardClicked = null;
             secondCardClicked = null;
             attempts++;
-            mozartSound.play();
+            // mozartSound.play();
             displayStats();
 
 
