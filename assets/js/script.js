@@ -6,6 +6,7 @@ var matches = null;
 var max_matches = 9;
 var attempts = null;
 var games_played = null;
+var mozartSound = new Audio("../memory_match/assets/audio/Mozart.mp3");
 
 
 
@@ -22,7 +23,7 @@ function handleCardClick(event) {
 
    if($(this).hasClass("clicked")){
        return
-   };
+   }
 
     if (firstCardClicked === null){
 
@@ -41,12 +42,20 @@ function handleCardClick(event) {
         displayStats();
 
         if (revealedCardClick1 === revealedCardClick2){
-
+            // switch (firstCardClicked[0].childNodes[2]) {
+            //     case "div.front-card.mozart":
+            //         mozartSound.play();
+            //         break;
+            // }
             matches++;
             firstCardClicked = null;
             secondCardClicked = null;
             attempts++;
+            mozartSound.play();
             displayStats();
+
+
+
 
         } else {
                 setTimeout(function(){
@@ -64,31 +73,31 @@ function handleCardClick(event) {
         if (matches === max_matches){
 
             displayWinModal();
-        };
-
-    function displayWinModal(){
-
-        $("#winModalContainer").removeClass("hidden");
-        games_played++
-        $("#games-played").text(games_played);
-
-            };
         }
 
-    };
+ function displayWinModal(){
+
+        $("#winModalContainer").removeClass("hidden");
+        games_played++;
+        $("#games-played").text(games_played);
+
+            }
+        }
+
+    }
 
 function calculateAccuracy(){
 
     var accuracyEquation = (matches / attempts).toFixed(2) * 100 + "%" ;
     return accuracyEquation ;
-};
+}
 function displayStats(){
 
     var calculateAverage = calculateAccuracy();
     $("#accuracy-calc").text(calculateAverage);
     $("#attempts").text(attempts);
 
-};
+}
 
 function resetStats(){
 
@@ -100,8 +109,4 @@ function resetStats(){
     $("#accuracy-calc").text(0 + "%");
     $("#attempts").text(0);
 
-};
-
-
-
-
+}
