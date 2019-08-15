@@ -40,7 +40,7 @@ function handleCardClick(event) {
         var revealedCardClick1 = firstCardClicked.find("div.front-card").css("background-image");
         var revealedCardClick2 = secondCardClicked.find("div.front-card").css("background-image");
 
-        displayStats();
+        // displayStats();
 
         if (revealedCardClick1 === revealedCardClick2){
             var cardChildNode = firstCardClicked[0].childNodes[2];
@@ -96,12 +96,18 @@ function handleCardClick(event) {
     }
 
 function calculateAccuracy(){
+    var accuracyEquation = (matches / attempts)
+    if(isNaN(accuracyEquation)){
+        return 0;
+    } else {
+        var accuracy = accuracyEquation * 100;
+        var accuracyRounded = Math.round(accuracy)  + "%";
 
-    var accuracyEquation = (matches / attempts).toFixed(2) * 100 + "%" ;
-    return accuracyEquation ;
+        return accuracyRounded;
+    }
+
 }
 function displayStats(){
-
     var calculateAverage = calculateAccuracy();
     $("#accuracy-calc").text(calculateAverage);
     $("#attempts").text(attempts);
