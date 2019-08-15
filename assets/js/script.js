@@ -63,6 +63,7 @@ function handleCardClick(event) {
 
 
         } else {
+            $('.card').off();
                 setTimeout(function(){
                     firstCardClicked.find("div.back-card").removeClass("hidden");
                     secondCardClicked.find("div.back-card").removeClass("hidden");
@@ -72,7 +73,10 @@ function handleCardClick(event) {
                     secondCardClicked = null;
                     attempts++;
                     displayStats();
+                    $(".card").click(handleCardClick);
                 }, 1500);
+
+
 
         }
         if (matches === max_matches){
