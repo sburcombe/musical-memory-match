@@ -8,6 +8,9 @@ var attempts = null;
 var games_played = null;
 var mozartSound = new Audio("../memory_match/assets/audio/Mozart.mp3");
 var vivaldiSound = new Audio("../memory_match/assets/audio/Vivaldi.mp3");
+var tchaikovskySound = new Audio("../memory_match/assets/audio/Tchaikovsky.m4a");
+var saintSaensSound = new Audio("../memory_match/assets/audio/SaintSaens.m4a");
+var beethovenSound = new Audio("../memory_match/assets/audio/Beethoven.m4a");
 
 
 
@@ -57,16 +60,21 @@ function handleCardClick(event) {
                         vivaldiSound.pause();
                     }, 6000);
                     break;
+                case "front-card tchaikovsky":
+                    tchaikovskySound.play();
+                    break;
+                case "front-card saint-saens":
+                    saintSaensSound.play();
+                    break;
+                case "front-card beethoven":
+                    beethovenSound.play();
+                    break;
             }
             matches++;
             firstCardClicked = null;
             secondCardClicked = null;
             attempts++;
-            // mozartSound.play();
             displayStats();
-
-
-
 
         } else {
             $('.card').off();
