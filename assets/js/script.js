@@ -11,6 +11,11 @@ var vivaldiSound = new Audio("../memory_match/assets/audio/Vivaldi.mp3");
 var tchaikovskySound = new Audio("../memory_match/assets/audio/Tchaikovsky.m4a");
 var saintSaensSound = new Audio("../memory_match/assets/audio/SaintSaens.m4a");
 var beethovenSound = new Audio("../memory_match/assets/audio/Beethoven.m4a");
+var bachSound = new Audio("../memory_match/assets/audio/Bach.m4a");
+var priceSound = new Audio("../memory_match/assets/audio/FlorencePrice.m4a");
+var bondsSound = new Audio("../memory_match/assets/audio/MargaretBonds.m4a");
+var saintGeorgesSound = new Audio("../memory_match/assets/audio/SaintGeorges.m4a");
+
 
 
 
@@ -68,6 +73,18 @@ function handleCardClick(event) {
                     break;
                 case "front-card beethoven":
                     beethovenSound.play();
+                    break;
+                case "front-card bach":
+                    bachSound.play();
+                    break;
+                case "front-card price":
+                    priceSound.play();
+                    break;
+                case "front-card bonds":
+                    bondsSound.play();
+                    break;
+                case "front-card saint-georges":
+                    saintGeorgesSound.play();
                     break;
             }
             matches++;
