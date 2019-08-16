@@ -47,9 +47,15 @@ function handleCardClick(event) {
             switch (cardChildNode.className) {
                 case "front-card mozart":
                     mozartSound.play();
+                    setTimeout(function () {
+                        mozartSound.pause();
+                    }, 4250);
                     break;
                 case "front-card vivaldi":
                     vivaldiSound.play();
+                    setTimeout(function () {
+                        vivaldiSound.pause();
+                    }, 6000);
                     break;
             }
             matches++;
