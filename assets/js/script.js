@@ -28,20 +28,16 @@ function initializeApp() {
 
 
 function handleCardClick(event) {
-
-
-   if($(this).hasClass("clicked")){
+    if($(this).hasClass("clicked")){
        return
-   }
+    }
 
     if (firstCardClicked === null){
-
         $(event.currentTarget).addClass("clicked");
         firstCardClicked = $(this);
         firstCardClicked.find("div.back-card").addClass("hidden");
 
     } else {
-
         $(event.currentTarget).addClass("clicked");
         secondCardClicked = $(this);
         secondCardClicked.find("div.back-card").addClass("hidden");
@@ -51,6 +47,15 @@ function handleCardClick(event) {
         // displayStats();
 
         if (revealedCardClick1 === revealedCardClick2){
+            mozartSound.pause();
+            vivaldiSound.pause();
+            tchaikovskySound.pause();
+            saintSaensSound.pause();
+            beethovenSound.pause();
+            bachSound.pause();
+            priceSound.pause();
+            bondsSound.pause();
+            saintGeorgesSound.pause();
             var cardChildNode = firstCardClicked[0].childNodes[2];
             switch (cardChildNode.className) {
                 case "front-card mozart":
