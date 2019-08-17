@@ -5,9 +5,7 @@ body {
     background-color: black;
     background-position: center;
     background-size: cover;
-
 }
-
 header {
     height: 10vh;
     text-align: center;
@@ -17,14 +15,10 @@ header {
     font-size: 2rem;
     color: whitesmoke;
     font-family: 'Beth Ellen', cursive, sans-serif;
-
-
 }
-
 .container {
     margin-top: 10px;
 }
-
 aside {
     text-align: center;
     border: 1px solid black;
@@ -34,14 +28,9 @@ aside {
     font-family: 'Beth Ellen', cursive, sans-serif;
     font-size: 14px;
 }
-
 aside > p {
-
-
     text-align: center;
-
 }
-
 aside * p {
     margin: 5px auto;
     border: 1px solid black;
@@ -51,27 +40,20 @@ aside * p {
     background-color: #f7644a;
     padding: 20px;
 }
-
-
-
 main {
     /* border: 1px solid black; */
     display: inline-block;
     height: 100%;
     width: 79%;
-
 }
-
 .card {
     height: 156px;
     width: 150px;
     padding: 2px;
     display: inline-block;
+    border-radius: 25px;
 }
-
-
 .front-card {
-
     background-color: black;
     background-size: cover;
     height: 156px;
@@ -79,48 +61,35 @@ main {
     padding: 2px;
     display: inline-block;
     position: absolute;
-
+    border-radius: 25px;
 }
-
 .vivaldi{
-
     background-image : url("../images/Vivaldi.png");
 }
-
-
 .tchaikovsky {
-
     background-image : url("../images/Tchaikovsky.png");
 }
 .saint-georges {
-
     background-image : url("../images/SaintGeorges.png");
 }
 .mozart {
-
-     background-image : url("../images/Mozart.png");
+    background-image : url("../images/Mozart.png");
  }
 .bonds {
-
     background-image : url("../images/MargaretBonds.png");
 }
 .price {
-
     background-image : url("../images/FlorencePrice.png");
 }
 .saint-saens {
-
     background-image : url("../images/SaintSaens.png");
 }
 .beethoven{
-
     background-image : url("../images/Beethoven.png");
 }
 .bach {
-
     background-image : url("../images/Bach.png");
 }
-
 .back-card{
     background-image: url("../images/music.png");
     background-color: black;
@@ -130,9 +99,8 @@ main {
     padding: 2px;
     display: inline-block;
     position: absolute;
+    border-radius: 25px;
 }
-
-
 .modalShadow{
     position: fixed;
     background-color: rgba(0, 0, 0, .5);
@@ -141,10 +109,11 @@ main {
     height: 100vh;
     width: 100vw;
 }
-
-
 .winModal {
-    background-color: #5bc0de;
+    /* background-color: #5bc0de; */
+    background-image: url("../images/sheetMusic.jpeg");
+    font-family: 'Livvic', sans-serif;
+    font-weight: 700;
     color: black;
     position: absolute;
     text-align: center;
@@ -153,15 +122,14 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 100px;
-
-
 }
 .replayInvite{
     background-color: rgba(0, 0, 0, .5);
     color: white;
     padding: 30px;
+    font-size: 20px;
+    border-radius: 25px;
 }
-
 .hidden {
     display: none;
 }
