@@ -15,6 +15,7 @@ header {
     font-size: 2rem;
     color: whitesmoke;
     font-family: 'Beth Ellen', cursive, sans-serif;
+    margin-bottom: 20px;
 }
 header > p {
     margin-top: 0;
@@ -31,12 +32,13 @@ aside {
     text-align: center;
     border: 1px solid black;
     width: 20%;
-    display: inline-block;
     vertical-align: top;
     font-family: 'Beth Ellen', cursive, sans-serif;
     font-size: 14px;
+    display: inline-block;
 
 }
+
 aside > p {
     text-align: center;
     background-color: #f7644a;
@@ -44,16 +46,37 @@ aside > p {
     margin-bottom: 1px;
 
 }
-aside * p {
-    margin: 3px auto;
+
+    /* margin: 3px auto;
     border: 1px solid black;
     text-align: center;
     width: 50%;
-    background-color: #f7644a;
-    padding: 20px;
-    border-radius: 25px;
+    background-color: #f7644a; */
+    /* padding: 20px; */
+    /* border-radius: 25px;
     height: 70px;
+    display: inline-block; */
 
+/* .games-played {
+    vertical-align: super;
+} */
+#games-played{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.games-played-count {
+    margin: auto;
+}
+.stats-boxes{
+    margin: 5% auto;
+    vertical-align: bottom;
+    height: 4rem;
+    width: 7rem;
+    background-color: #f7644a;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
 
 }
 main {
