@@ -1,7 +1,5 @@
 body {
-    /* background-image: url("../images/blind-robot.jpg"); */
-    background-repeat: no-repeat;
-    /* background-color: #f7e1b5; */
+    /* background-repeat: no-repeat; */
     background-color: black;
     background-position: center;
     background-size: cover;
@@ -10,7 +8,6 @@ header {
     height: 10vh;
     text-align: center;
     width: 100%;
-    /* border: 1px solid black; */
     display: inline-block;
     font-size: 2rem;
     color: whitesmoke;
@@ -18,6 +15,11 @@ header {
 }
 .container {
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    left: 20px;
+
 }
 aside {
     text-align: center;
@@ -27,29 +29,32 @@ aside {
     vertical-align: top;
     font-family: 'Beth Ellen', cursive, sans-serif;
     font-size: 14px;
+
 }
 aside > p {
     text-align: center;
+    background-color: #f7644a;
+    border-radius: 25px;
+    margin-bottom: 1px;
 }
 aside * p {
-    margin: 5px auto;
+    margin: 3px auto;
     border: 1px solid black;
     text-align: center;
     width: 50%;
-    /* background-color: #5bc0de; */
     background-color: #f7644a;
     padding: 20px;
+    border-radius: 25px;
 }
 main {
-    /* border: 1px solid black; */
     display: inline-block;
     height: 100%;
-    width: 79%;
+    width: 75%;
 }
 .card {
     height: 156px;
-    width: 150px;
-    padding: 2px;
+    width: 14.66%;
+    padding: 5px;
     display: inline-block;
     border-radius: 25px;
 }
@@ -57,7 +62,7 @@ main {
     background-color: black;
     background-size: cover;
     height: 156px;
-    width: 150px;
+    width: 14.66%;
     padding: 2px;
     display: inline-block;
     position: absolute;
@@ -95,7 +100,8 @@ main {
     background-color: black;
     background-size: cover;
     height: 156px;/*100%*/
-    width: 150px; /*100%*/
+    width: 14.66%;
+    /* width: 150px;  */
     padding: 2px;
     display: inline-block;
     position: absolute;
