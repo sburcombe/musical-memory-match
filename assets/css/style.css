@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     /* background-repeat: no-repeat; */
     background-color: black;
@@ -5,7 +8,7 @@ body {
     background-size: cover;
 }
 header {
-    height: 10vh;
+    height: 5vh;
     text-align: center;
     width: 100%;
     display: inline-block;
@@ -13,12 +16,15 @@ header {
     color: whitesmoke;
     font-family: 'Beth Ellen', cursive, sans-serif;
 }
+header > p {
+    margin-top: 0;
+}
 .container {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    left: 20px;
+    justify-content: space-between;
 
 }
 aside {
@@ -36,6 +42,7 @@ aside > p {
     background-color: #f7644a;
     border-radius: 25px;
     margin-bottom: 1px;
+
 }
 aside * p {
     margin: 3px auto;
@@ -45,6 +52,9 @@ aside * p {
     background-color: #f7644a;
     padding: 20px;
     border-radius: 25px;
+    height: 70px;
+
+
 }
 main {
     display: inline-block;
@@ -52,18 +62,20 @@ main {
     width: 75%;
 }
 .card {
-    height: 156px;
-    width: 14.66%;
+    height: 140px;
+    width: 12%;
     padding: 5px;
+    margin: 10px;
     display: inline-block;
     border-radius: 25px;
 }
 .front-card {
     background-color: black;
     background-size: cover;
-    height: 156px;
-    width: 14.66%;
+    height: 140px;
+    width: 12%;
     padding: 2px;
+    margin: 10px;
     display: inline-block;
     position: absolute;
     border-radius: 25px;
@@ -99,10 +111,11 @@ main {
     background-image: url("../images/music.png");
     background-color: black;
     background-size: cover;
-    height: 156px;/*100%*/
-    width: 14.66%;
+    height: 140px;/*100%*/
+    width: 12%;
     /* width: 150px;  */
     padding: 2px;
+    margin: 10px;
     display: inline-block;
     position: absolute;
     border-radius: 25px;
