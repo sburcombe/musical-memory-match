@@ -111,25 +111,19 @@ function handleCardClick(event) {
                     displayStats();
                     $(".card").click(handleCardClick);
                 }, 1500);
-
-
-
         }
         if (matches === max_matches){
-
-            displayWinModal();
+            setTimeout(function(){
+                displayWinModal();
+            }, 3500);
         }
-
- function displayWinModal(){
-
-        $("#winModalContainer").removeClass("hidden");
-        games_played++;
-        $("#games-played").text(games_played);
-
-            }
-        }
-
     }
+}
+function displayWinModal() {
+    $("#winModalContainer").removeClass("hidden");
+    games_played++;
+    $("#games-played").text(games_played);
+}
 
 function calculateAccuracy(){
     var accuracyEquation = (matches / attempts)
@@ -138,7 +132,6 @@ function calculateAccuracy(){
     } else {
         var accuracy = accuracyEquation * 100;
         var accuracyRounded = Math.round(accuracy)  + "%";
-
         return accuracyRounded;
     }
 
@@ -147,11 +140,9 @@ function displayStats(){
     var calculateAverage = calculateAccuracy();
     $("#accuracy-calc").text(calculateAverage);
     $("#attempts").text(attempts);
-
 }
 
 function resetStats(){
-
     matches = null;
     attempts = null;
     $("#winModalContainer").addClass("hidden");
