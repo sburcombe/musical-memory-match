@@ -16,7 +16,14 @@ var priceSound = new Audio("../memory_match/assets/audio/FlorencePrice.m4a");
 var bondsSound = new Audio("../memory_match/assets/audio/MargaretBonds.m4a");
 var saintGeorgesSound = new Audio("../memory_match/assets/audio/SaintGeorges.m4a");
 
-
+var musicPlayer = new Audio();
+var cardHelper = {
+    'tchaikovsky':{
+        music: '../memory_match/assets/audio/Tchaikovsky.m4a',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    }
+}
 
 
 function initializeApp() {
@@ -57,6 +64,10 @@ function handleCardClick(event) {
             bondsSound.pause();
             saintGeorgesSound.pause();
             var cardChildNode = firstCardClicked[0].childNodes[2];
+            var thisCardData = cardHelper[ firstCardClicked.attr('data-card')];
+            musicPlayer.src = thisCardData.music;
+            musicPlayer.play();
+
             switch (cardChildNode.className) {
                 case "front-card mozart":
                     mozartSound.play();
