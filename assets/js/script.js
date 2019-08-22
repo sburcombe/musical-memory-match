@@ -6,17 +6,55 @@ var matches = null;
 var max_matches = 9;
 var attempts = null;
 var games_played = null;
-var mozartSound = new Audio("../memory_match/assets/audio/Mozart.mp3");
-var vivaldiSound = new Audio("../memory_match/assets/audio/Vivaldi.mp3");
-var tchaikovskySound = new Audio("../memory_match/assets/audio/Tchaikovsky.m4a");
-var saintSaensSound = new Audio("../memory_match/assets/audio/SaintSaens.m4a");
-var beethovenSound = new Audio("../memory_match/assets/audio/Beethoven.m4a");
-var bachSound = new Audio("../memory_match/assets/audio/Bach.m4a");
-var priceSound = new Audio("../memory_match/assets/audio/FlorencePrice.m4a");
-var bondsSound = new Audio("../memory_match/assets/audio/MargaretBonds.m4a");
-var saintGeorgesSound = new Audio("../memory_match/assets/audio/SaintGeorges.m4a");
+var musicPlayer = new Audio();
+var cardHelper = {
+    'tchaikovsky':{
+        music: '../memory_match/assets/audio/Tchaikovsky.m4a',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    },
+    'mozart': {
+        music: '../memory_match/assets/audio/Mozart.mp3',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    },
+    'vivaldi': {
+        music: '../memory_match/assets/audio/Vivaldi.mp3',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    },
+    'saint-saens': {
+        music: '../memory_match/assets/audio/SaintSaens.m4a',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    },
+    'beethoven': {
+        music: '../memory_match/assets/audio/Beethoven.m4a',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    },
+    'bach': {
+        music: '../memory_match/assets/audio/Bach.m4a',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    },
+    'price': {
+        music: '../memory_match/assets/audio/FlorencePrice.m4a',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    },
+    'bonds': {
+        music: '../memory_match/assets/audio/MargaretBonds.m4a',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    },
+    'saint-georges': {
+        music: '../memory_match/assets/audio/SaintGeorges.m4a',
+        portrait: 'tchaikovsky.jpg',
+        bio: 'he was a musician'
+    }
 
-
+}
 
 
 function initializeApp() {
@@ -47,51 +85,10 @@ function handleCardClick(event) {
         // displayStats();
 
         if (revealedCardClick1 === revealedCardClick2){
-            mozartSound.pause();
-            vivaldiSound.pause();
-            tchaikovskySound.pause();
-            saintSaensSound.pause();
-            beethovenSound.pause();
-            bachSound.pause();
-            priceSound.pause();
-            bondsSound.pause();
-            saintGeorgesSound.pause();
-            var cardChildNode = firstCardClicked[0].childNodes[2];
-            switch (cardChildNode.className) {
-                case "front-card mozart":
-                    mozartSound.play();
-                    setTimeout(function () {
-                        mozartSound.pause();
-                    }, 4250);
-                    break;
-                case "front-card vivaldi":
-                    vivaldiSound.play();
-                    setTimeout(function () {
-                        vivaldiSound.pause();
-                    }, 6000);
-                    break;
-                case "front-card tchaikovsky":
-                    tchaikovskySound.play();
-                    break;
-                case "front-card saint-saens":
-                    saintSaensSound.play();
-                    break;
-                case "front-card beethoven":
-                    beethovenSound.play();
-                    break;
-                case "front-card bach":
-                    bachSound.play();
-                    break;
-                case "front-card price":
-                    priceSound.play();
-                    break;
-                case "front-card bonds":
-                    bondsSound.play();
-                    break;
-                case "front-card saint-georges":
-                    saintGeorgesSound.play();
-                    break;
-            }
+            var thisCardData = cardHelper[ firstCardClicked.attr('data-card')];
+            musicPlayer.src = thisCardData.music;
+            musicPlayer.play();
+
             matches++;
             firstCardClicked = null;
             secondCardClicked = null;
