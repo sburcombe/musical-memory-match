@@ -10,47 +10,47 @@ var musicPlayer = new Audio();
 var cardHelper = {
     'tchaikovsky':{
         music: '../memory_match/assets/audio/Tchaikovsky.m4a',
-        portrait: 'tchaikovsky.jpg',
+        portrait: '../images/Tchaikovsky.png',
         bio: 'he was a musician'
     },
     'mozart': {
         music: '../memory_match/assets/audio/Mozart.mp3',
-        portrait: 'tchaikovsky.jpg',
+        portrait: '../images/Mozart.png',
         bio: 'he was a musician'
     },
     'vivaldi': {
         music: '../memory_match/assets/audio/Vivaldi.mp3',
-        portrait: 'tchaikovsky.jpg',
+        portrait: '../images/Vivaldi.png',
         bio: 'he was a musician'
     },
     'saint-saens': {
         music: '../memory_match/assets/audio/SaintSaens.m4a',
-        portrait: 'tchaikovsky.jpg',
+        portrait: '../images/SaintSaens.png',
         bio: 'he was a musician'
     },
     'beethoven': {
         music: '../memory_match/assets/audio/Beethoven.m4a',
-        portrait: 'tchaikovsky.jpg',
+        portrait: '../images/Beethoven.png',
         bio: 'he was a musician'
     },
     'bach': {
         music: '../memory_match/assets/audio/Bach.m4a',
-        portrait: 'tchaikovsky.jpg',
+        portrait: '../images/Bach.png',
         bio: 'he was a musician'
     },
     'price': {
         music: '../memory_match/assets/audio/FlorencePrice.m4a',
-        portrait: 'tchaikovsky.jpg',
-        bio: 'he was a musician'
+        portrait: '../images/FlorencePrice.png',
+        bio: 'she was a musician'
     },
     'bonds': {
         music: '../memory_match/assets/audio/MargaretBonds.m4a',
-        portrait: 'tchaikovsky.jpg',
-        bio: 'he was a musician'
+        portrait: '../images/MargaretBonds.png',
+        bio: 'she was a musician'
     },
     'saint-georges': {
         music: '../memory_match/assets/audio/SaintGeorges.m4a',
-        portrait: 'tchaikovsky.jpg',
+        portrait: '../images/SaintGeorges.png',
         bio: 'he was a musician'
     }
 
@@ -62,6 +62,19 @@ function initializeApp() {
     $(".card").click(handleCardClick);
     //when the winModal replay button is clicked, the game is reset
     $(".replayInvite").click(resetStats);
+    cardCreation();
+}
+
+function cardCreation(){
+    $.each(cardHelper, function(key, value){
+        $.each(value,function (key, image){
+
+            if(key === 'portrait'){
+                console.log(image);
+            }
+            // console.log(key + "*" + image['portrait'])
+        })
+        })
 }
 
 
