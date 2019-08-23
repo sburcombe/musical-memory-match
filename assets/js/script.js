@@ -6,6 +6,7 @@ var matches = null;
 var max_matches = 9;
 var attempts = null;
 var games_played = null;
+var cards = []
 var musicPlayer = new Audio();
 var cardHelper = {
     'tchaikovsky':{
@@ -68,9 +69,9 @@ function initializeApp() {
 function cardCreation(){
     $.each(cardHelper, function(key, value){
         $.each(value,function (key, image){
-
             if(key === 'portrait'){
-                console.log(image);
+                cards.push(image);
+                console.log(cards);
             }
             // console.log(key + "*" + image['portrait'])
         })
