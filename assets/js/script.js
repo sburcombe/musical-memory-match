@@ -11,47 +11,47 @@ var musicPlayer = new Audio();
 var cardHelper = {
     'tchaikovsky':{
         music: '../memory_match/assets/audio/Tchaikovsky.m4a',
-        portrait: '../images/Tchaikovsky.png',
+        portrait: '../memory_match/assets/images/Tchaikovsky.png',
         bio: 'he was a musician'
     },
     'mozart': {
         music: '../memory_match/assets/audio/Mozart.mp3',
-        portrait: '../images/Mozart.png',
+        portrait: '../memory_match/assets/images/Mozart.png',
         bio: 'he was a musician'
     },
     'vivaldi': {
         music: '../memory_match/assets/audio/Vivaldi.mp3',
-        portrait: '../images/Vivaldi.png',
+        portrait: '../memory_match/assets/images/Vivaldi.png',
         bio: 'he was a musician'
     },
     'saint-saens': {
         music: '../memory_match/assets/audio/SaintSaens.m4a',
-        portrait: '../images/SaintSaens.png',
+        portrait: '../memory_match/assets/images/SaintSaens.png',
         bio: 'he was a musician'
     },
     'beethoven': {
         music: '../memory_match/assets/audio/Beethoven.m4a',
-        portrait: '../images/Beethoven.png',
+        portrait: '../memory_match/assets/images/Beethoven.png',
         bio: 'he was a musician'
     },
     'bach': {
         music: '../memory_match/assets/audio/Bach.m4a',
-        portrait: '../images/Bach.png',
+        portrait: '../memory_match/assets/images/Bach.png',
         bio: 'he was a musician'
     },
     'price': {
         music: '../memory_match/assets/audio/FlorencePrice.m4a',
-        portrait: '../images/FlorencePrice.png',
+        portrait: '../memory_match/assets/images/FlorencePrice.png',
         bio: 'she was a musician'
     },
     'bonds': {
         music: '../memory_match/assets/audio/MargaretBonds.m4a',
-        portrait: '../images/MargaretBonds.png',
+        portrait: '../memory_match/assets/images/MargaretBonds.png',
         bio: 'she was a musician'
     },
     'saint-georges': {
         music: '../memory_match/assets/audio/SaintGeorges.m4a',
-        portrait: '../images/SaintGeorges.png',
+        portrait: '../memory_match/assets/images/SaintGeorges.png',
         bio: 'he was a musician'
     }
 
@@ -71,11 +71,18 @@ function cardCreation(){
         $.each(value,function (key, image){
             if(key === 'portrait'){
                 cards.push(image);
-                console.log(cards);
-            }
-            // console.log(key + "*" + image['portrait'])
+                 }
+            })
         })
-        })
+    for(var cardIndex = 0; cardIndex < cards.length; cardIndex++){
+        var imageUrl = cards[cardIndex];
+        var innerCard = $("<div></div>");
+        var faceCard = $(".card").append(innerCard);
+        faceCard.addClass("front-card").css("background-image", "url(" + imageUrl + ")");
+        var card = $("<div></div>").addClass("card");
+        $("div.container").append(card);
+
+    }
 }
 
 
