@@ -67,14 +67,8 @@ function initializeApp() {
 }
 function shuffle(array) {
     for (var cardIndex = array.length - 1; cardIndex > 0; cardIndex--) {
-        var randomIndex = Math.floor(Math.random() * (cardIndex + 1)); // random index from 0 to i
-
-        // swap elements array[i] and array[j]
-        // we use "destructuring assignment" syntax to achieve that
-        // you'll find more details about that syntax in later chapters
-        // same can be written as:
-        // let t = array[i]; array[i] = array[j]; array[j] = t
-        [array[cardIndex], array[randomIndex]] = [array[randomIndex], array[cardIndex]];
+        var randomIndex = Math.floor(Math.random() * (cardIndex + 1));
+   [array[cardIndex], array[randomIndex]] = [array[randomIndex], array[cardIndex]];
     }
 }
 function cardCreation(){
@@ -91,11 +85,10 @@ function cardCreation(){
         var imageUrl = cards[cardIndex];
         var cardFront = $("<div>").addClass("front-card").css("background-image", "url(" + imageUrl + ")");
         var cardBox = $("<div>").addClass("card");
+        var cardBack = $("<div>").addClass("back-card");
         cardBox.append(cardFront);
         $("div.container").append(cardBox);
-
-
-
+        cardBox.append(cardBack);
     }
 
 }
