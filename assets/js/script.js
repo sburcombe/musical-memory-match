@@ -65,22 +65,36 @@ function initializeApp() {
     $(".replayInvite").click(resetStats);
     cardCreation();
 }
+function shuffle(array) {
+    for (var cardIndex = array.length - 1; cardIndex > 0; cardIndex--) {
+        var randomIndex = Math.floor(Math.random() * (cardIndex + 1)); // random index from 0 to i
 
+        // swap elements array[i] and array[j]
+        // we use "destructuring assignment" syntax to achieve that
+        // you'll find more details about that syntax in later chapters
+        // same can be written as:
+        // let t = array[i]; array[i] = array[j]; array[j] = t
+        [array[cardIndex], array[randomIndex]] = [array[randomIndex], array[cardIndex]];
+    }
+}
 function cardCreation(){
     $.each(cardHelper, function(key, value){
         $.each(value,function (key, image){
             if(key === 'portrait'){
                 cards.push(image);
+                cards.push(image);
                  }
             })
         })
+        shuffle(cards);
     for(var cardIndex = 0; cardIndex < cards.length; cardIndex++){
         var imageUrl = cards[cardIndex];
-        var cardFront = $("<div>");
-        cardFront.addClass("front-card").css("background-image", "url(" + imageUrl + ")");
+        var cardFront = $("<div>").addClass("front-card").css("background-image", "url(" + imageUrl + ")");
         var cardBox = $("<div>").addClass("card");
         cardBox.append(cardFront);
         $("div.container").append(cardBox);
+
+
 
     }
 
