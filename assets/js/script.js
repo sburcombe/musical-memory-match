@@ -76,13 +76,14 @@ function cardCreation(){
         })
     for(var cardIndex = 0; cardIndex < cards.length; cardIndex++){
         var imageUrl = cards[cardIndex];
-        var innerCard = $("<div></div>");
-        var faceCard = $(".card").append(innerCard);
-        faceCard.addClass("front-card").css("background-image", "url(" + imageUrl + ")");
-        var card = $("<div></div>").addClass("card");
-        $("div.container").append(card);
+        var cardFront = $("<div>");
+        cardFront.addClass("front-card").css("background-image", "url(" + imageUrl + ")");
+        var cardBox = $("<div>").addClass("card");
+        cardBox.append(cardFront);
+        $("div.container").append(cardBox);
 
     }
+
 }
 
 
