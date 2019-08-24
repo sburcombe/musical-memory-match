@@ -6,7 +6,8 @@ var matches = null;
 var max_matches = 9;
 var attempts = null;
 var games_played = null;
-var cards = []
+var cards = [];
+var songs
 var musicPlayer = new Audio();
 var cardHelper = {
     'tchaikovsky':{
@@ -59,11 +60,11 @@ var cardHelper = {
 
 
 function initializeApp() {
-    //when a card is clicked, the handleCardClick function is called
-    $(".card").click(handleCardClick);
     //when the winModal replay button is clicked, the game is reset
     $(".replayInvite").click(resetStats);
     cardCreation();
+    //when a card is clicked, the handleCardClick function is called
+    $(".card").click(handleCardClick);
 }
 function shuffle(array) {
     for (var cardIndex = array.length - 1; cardIndex > 0; cardIndex--) {
@@ -83,9 +84,9 @@ function cardCreation(){
         shuffle(cards);
     for(var cardIndex = 0; cardIndex < cards.length; cardIndex++){
         var imageUrl = cards[cardIndex];
-        var cardFront = $("<div>").addClass("front-card").css("background-image", "url(" + imageUrl + ")");
+        var cardFront = $("<div>").addClass("front-card card").css("background-image", "url(" + imageUrl + ")")
         var cardBox = $("<div>").addClass("card");
-        var cardBack = $("<div>").addClass("back-card");
+        var cardBack = $("<div>").addClass("back-card card");
         cardBox.append(cardFront);
         $("div.container").append(cardBox);
         cardBox.append(cardBack);
@@ -111,7 +112,6 @@ function handleCardClick(event) {
         var revealedCardClick1 = firstCardClicked.find("div.front-card").css("background-image");
         var revealedCardClick2 = secondCardClicked.find("div.front-card").css("background-image");
 
-        // displayStats();
 
         if (revealedCardClick1 === revealedCardClick2){
             var thisCardData = cardHelper[ firstCardClicked.attr('data-card')];
