@@ -85,7 +85,7 @@ function cardCreation(){
     for(var cardIndex = 0; cardIndex < cards.length; cardIndex++){
         var imageUrl = cards[cardIndex];
         var cardFront = $("<div>").addClass("front-card").css("background-image", "url(" + imageUrl + ")") //card class
-        var cardBox = $("<div>").addClass("card");
+        var cardBox = $("<div>").addClass("card").attr('data-card', 'tchaikovsky');
         var cardBack = $("<div>").addClass("back-card "); //card class
         cardBox.append(cardFront);
         $("div.container").append(cardBox);
