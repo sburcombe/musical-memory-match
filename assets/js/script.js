@@ -84,9 +84,9 @@ function cardCreation(){
         shuffle(cards);
     for(var cardIndex = 0; cardIndex < cards.length; cardIndex++){
         var imageUrl = cards[cardIndex];
-        var cardFront = $("<div>").addClass("front-card card").css("background-image", "url(" + imageUrl + ")")
+        var cardFront = $("<div>").addClass("front-card").css("background-image", "url(" + imageUrl + ")") //card class
         var cardBox = $("<div>").addClass("card");
-        var cardBack = $("<div>").addClass("back-card card");
+        var cardBack = $("<div>").addClass("back-card "); //card class
         cardBox.append(cardFront);
         $("div.container").append(cardBox);
         cardBox.append(cardBack);
@@ -96,6 +96,7 @@ function cardCreation(){
 
 
 function handleCardClick(event) {
+    console.log("handleClick called");
     if($(this).hasClass("clicked")){
        return
     }
@@ -104,6 +105,7 @@ function handleCardClick(event) {
         $(event.currentTarget).addClass("clicked");
         firstCardClicked = $(this);
         firstCardClicked.find("div.back-card").addClass("hidden");
+
 
     } else {
         $(event.currentTarget).addClass("clicked");
