@@ -101,7 +101,6 @@ function cardCreation(){
 
 
 function handleCardClick(event) {
-    console.log("handleClick called");
     if($(this).hasClass("clicked")){
        return
     }
@@ -176,6 +175,7 @@ function displayStats(){
 }
 
 function resetStats(){
+    musicPlayer.pause();
     matches = null;
     attempts = null;
     $("#winModalContainer").addClass("hidden");
@@ -183,5 +183,6 @@ function resetStats(){
     $("div.card").removeClass("clicked");
     $("#accuracy-calc").text(0 + "%");
     $("#attempts").text(0);
+
 
 }
