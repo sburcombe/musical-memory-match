@@ -1,3 +1,4 @@
+/*Smartphones horizontal*/
 * {
     box-sizing: border-box;
 }
@@ -158,8 +159,148 @@ main {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1182px) and (max-width: 1701px) {
 
-  //CSS
+  * {
+    box-sizing: border-box;
+}
+body {
+    /* background-image: url("../images/theater.png"); */
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+header {
+    height: 5vh;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: 'Beth Ellen', cursive, sans-serif;
+    margin-bottom: 20px;
+}
+header > p {
+    margin-top: 0;
+}
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+aside {
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    font-family: 'Beth Ellen', cursive, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+
+}
+
+aside > p {
+    text-align: center;
+    background-color: coral;
+    border-radius: 25px;
+    margin-bottom: 1px;
+
+}
+
+#games-played{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.games-played-count {
+    margin: auto;
+}
+.stats-boxes{
+    margin: 5% auto;
+    vertical-align: bottom;
+    height: 4rem;
+    width: 7rem;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+main {
+    display: inline-block;
+    height: 100%;
+    width: 75%;
+}
+.card {
+    height: 140px;
+    /* width: 12%; */
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 25px;
+}
+.front-card {
+    background-color: black;
+    background-size: cover;
+    height: 140px;
+    /* width: 12%; */
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.back-card{
+    background-image: url("../images/music.png");
+    background-color:black;
+    background-size: cover;
+    height: 140px;/*100%*/
+    /* width: 12%; */
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 25px;
+}
+.modalShadow{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.winModal {
+    /* background-color: #5bc0de; */
+    background-image: url("../images/sheetMusic.jpeg");
+    font-family: 'Livvic', sans-serif;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+}
+.replayInvite{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.hidden {
+    display: none;
+}
 
 }
