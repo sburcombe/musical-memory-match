@@ -8,6 +8,7 @@ body {
     background-color: black;
     background-position: center;
     background-size: cover;
+
 }
 header {
     height: 5vh;
@@ -20,7 +21,7 @@ header {
     margin-bottom: 20px;
 }
 header > p {
-    margin-top: 0;
+    margin: 0 auto;
 }
 .container {
     margin-top: 10px;
@@ -28,6 +29,7 @@ header > p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5px;
 
   }
 aside {
@@ -170,6 +172,7 @@ body {
     background-color: black;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 header {
     height: 5vh;
