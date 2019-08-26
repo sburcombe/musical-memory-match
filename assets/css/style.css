@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body {
-    /* background-repeat: no-repeat; */
+    /* background-image: url("../images/theater.png"); */
+    background-repeat: no-repeat;
     background-color: black;
     background-position: center;
     background-size: cover;
@@ -27,10 +28,9 @@ header > p {
     align-items: center;
     justify-content: space-between;
 
-}
+  }
 aside {
     text-align: center;
-    border: 1px solid black;
     width: 20%;
     vertical-align: top;
     font-family: 'Beth Ellen', cursive, sans-serif;
@@ -41,25 +41,12 @@ aside {
 
 aside > p {
     text-align: center;
-    background-color: #f7644a;
+    background-color: coral;
     border-radius: 25px;
     margin-bottom: 1px;
 
 }
 
-    /* margin: 3px auto;
-    border: 1px solid black;
-    text-align: center;
-    width: 50%;
-    background-color: #f7644a; */
-    /* padding: 20px; */
-    /* border-radius: 25px;
-    height: 70px;
-    display: inline-block; */
-
-/* .games-played {
-    vertical-align: super;
-} */
 #games-played{
     display: flex;
     justify-content: center;
@@ -73,7 +60,7 @@ aside > p {
     vertical-align: bottom;
     height: 4rem;
     width: 7rem;
-    background-color: #f7644a;
+    background-color: coral;
     display: flex;
     justify-content: center;
     border-radius: 25px;
@@ -103,36 +90,10 @@ main {
     position: absolute;
     border-radius: 25px;
 }
-.vivaldi{
-    background-image : url("../images/Vivaldi.png");
-}
-.tchaikovsky {
-    background-image : url("../images/Tchaikovsky.png");
-}
-.saint-georges {
-    background-image : url("../images/SaintGeorges.png");
-}
-.mozart {
-    background-image : url("../images/Mozart.png");
- }
-.bonds {
-    background-image : url("../images/MargaretBonds.png");
-}
-.price {
-    background-image : url("../images/FlorencePrice.png");
-}
-.saint-saens {
-    background-image : url("../images/SaintSaens.png");
-}
-.beethoven{
-    background-image : url("../images/Beethoven.png");
-}
-.bach {
-    background-image : url("../images/Bach.png");
-}
+
 .back-card{
     background-image: url("../images/music.png");
-    background-color: black;
+    background-color:black;
     background-size: cover;
     height: 140px;/*100%*/
     width: 12%;
@@ -172,6 +133,7 @@ main {
     font-size: 20px;
     border-radius: 25px;
 }
+
 .hidden {
     display: none;
 }
