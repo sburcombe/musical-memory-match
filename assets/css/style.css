@@ -81,7 +81,7 @@ main {
     padding: 5px;
     margin: 10px;
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 50%;
 }
 .front-card {
     background-color: black;
@@ -92,7 +92,7 @@ main {
     margin: 10px;
     display: inline-block;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 50%;
 }
 
 .back-card{
@@ -106,7 +106,7 @@ main {
     margin: 10px;
     display: inline-block;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 50%;
 }
 .modalShadow{
     position: fixed;
@@ -135,7 +135,7 @@ main {
     color: white;
     padding: 30px;
     font-size: 20px;
-    border-radius: 25px;
+    border-radius: 50%;
 }
 
 .hidden {
@@ -245,7 +245,7 @@ main {
     padding: 10px;
     margin: 5px;
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 50%;
 }
 .front-card {
     background-color: black;
@@ -257,7 +257,7 @@ main {
     margin: 5px;
     display: inline-block;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 50%;
 }
 
 .back-card{
@@ -271,7 +271,7 @@ main {
     margin: 5px;
     display: inline-block;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 50%;
 }
 .modalShadow{
     position: fixed;
