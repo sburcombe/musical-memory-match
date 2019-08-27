@@ -11,48 +11,48 @@ var songs
 var musicPlayer = new Audio();
 var cardHelper = {
     'tchaikovsky':{
-        music: '../memory_match/assets/audio/Tchaikovsky.m4a',
-        portrait: '../memory_match/assets/images/Tchaikovsky.png',
+        music: './assets/audio/Tchaikovsky.m4a',
+        portrait: './assets/images/Tchaikovsky.png',
         bio: 'he was a musician'
     },
     'mozart': {
-        music: '../memory_match/assets/audio/Mozart.mp3',
-        portrait: '../memory_match/assets/images/Mozart.png',
+        music: './assets/audio/Mozart.mp3',
+        portrait: './assets/images/Mozart.png',
         bio: 'he was a musician'
     },
     'vivaldi': {
-        music: '../memory_match/assets/audio/Vivaldi.mp3',
-        portrait: '../memory_match/assets/images/Vivaldi.png',
+        music: './assets/audio/Vivaldi.mp3',
+        portrait: './assets/images/Vivaldi.png',
         bio: 'he was a musician'
     },
     'saint-saens': {
-        music: '../memory_match/assets/audio/SaintSaens.m4a',
-        portrait: '../memory_match/assets/images/SaintSaens.png',
+        music: './assets/audio/SaintSaens.m4a',
+        portrait: './assets/images/SaintSaens.png',
         bio: 'he was a musician'
     },
     'beethoven': {
-        music: '../memory_match/assets/audio/Beethoven.m4a',
-        portrait: '../memory_match/assets/images/Beethoven.png',
+        music: './assets/audio/Beethoven.m4a',
+        portrait: './assets/images/Beethoven.png',
         bio: 'he was a musician'
     },
     'bach': {
-        music: '../memory_match/assets/audio/Bach.m4a',
-        portrait: '../memory_match/assets/images/Bach.png',
+        music: './assets/audio/Bach.m4a',
+        portrait: './assets/images/Bach.png',
         bio: 'he was a musician'
     },
     'price': {
-        music: '../memory_match/assets/audio/FlorencePrice.m4a',
-        portrait: '../memory_match/assets/images/FlorencePrice.png',
+        music: './assets/audio/FlorencePrice.m4a',
+        portrait: './assets/images/FlorencePrice.png',
         bio: 'she was a musician'
     },
     'bonds': {
-        music: '../memory_match/assets/audio/MargaretBonds.m4a',
-        portrait: '../memory_match/assets/images/MargaretBonds.png',
+        music: './assets/audio/MargaretBonds.m4a',
+        portrait: './assets/images/MargaretBonds.png',
         bio: 'she was a musician'
     },
     'saint-georges': {
-        music: '../memory_match/assets/audio/SaintGeorges.m4a',
-        portrait: '../memory_match/assets/images/SaintGeorges.png',
+        music: './assets/audio/SaintGeorges.m4a',
+        portrait: './assets/images/SaintGeorges.png',
         bio: 'he was a musician'
     }
 
