@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 html, body {
-    /* background-image: url("../images/theater.png"); */
+    background-image: url("../images/theater_black.png");
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
@@ -47,10 +47,11 @@ aside {
 
 aside > p {
     text-align: center;
-    background-color: coral;
+    background-color:whitesmoke;
     border-radius: 50%;
     margin-bottom: 1px;
     margin-top: 0;
+    opacity: 0.5;
 
 }
 
@@ -67,10 +68,11 @@ aside > p {
     vertical-align: bottom;
     height: 4rem;
     width: 7rem;
-    background-color: coral;
+    background-color:whitesmoke;
     display: flex;
     justify-content: center;
     border-radius: 50%;
+    opacity: 0.5;
 
 }
 main {
@@ -84,7 +86,7 @@ main {
     padding: 5px;
     margin: 10px;
     display: inline-block;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 
 }
 .front-card {
@@ -96,11 +98,12 @@ main {
     margin: 10px;
     display: inline-block;
     position: absolute;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+
 }
 
 .back-card{
-    background-image: url("../images/music.png");
+    background-image: url("../images/sheetmusiccard.jpg");
     background-color:black;
     background-size: cover;
     height: 120px;/*100%*/
@@ -110,8 +113,17 @@ main {
     margin: 10px;
     display: inline-block;
     position: absolute;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
+.card:hover > .back-card {
+  transform: scale(1.04);
+  transition: all .1s ease-in-out;
+}
+
+.front-card, .back-card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 .modalShadow{
     position: fixed;
     background-color: rgba(0, 0, 0, .5);
@@ -184,7 +196,7 @@ header {
     text-align: center;
     width: 100%;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem;
     color: whitesmoke;
     font-family: 'Beth Ellen', cursive, sans-serif;
     margin-bottom: 20px;
@@ -198,6 +210,11 @@ header > p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    /* background-image: url("../images/musicnotegif.gif"); */
+    /* background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover; */
 
   }
 aside {
@@ -212,9 +229,10 @@ aside {
 
 aside > p {
     text-align: center;
-    background-color: coral;
+    background-color: whitesmoke;
     border-radius: 25px;
     margin-bottom: 1px;
+    opacity: 0.5;
 
 }
 
@@ -231,10 +249,11 @@ aside > p {
     vertical-align: bottom;
     height: 4rem;
     width: 7rem;
-    background-color: coral;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     border-radius: 25px;
+    opacity: 0.5;
 
 }
 main {
@@ -249,7 +268,7 @@ main {
     padding: 10px;
     margin: 5px;
     display: inline-block;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .front-card {
     background-color: black;
@@ -261,11 +280,11 @@ main {
     margin: 5px;
     display: inline-block;
     position: absolute;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .back-card{
-    background-image: url("../images/music.png");
+    background-image: url("../images/sheetmusiccard.jpg");
     background-color:black;
     background-size: cover;
     height: 140px;/*100%*/
@@ -275,7 +294,8 @@ main {
     margin: 5px;
     display: inline-block;
     position: absolute;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+
 }
 .modalShadow{
     position: fixed;
