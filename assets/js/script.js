@@ -9,6 +9,9 @@ var games_played = null;
 var cards = [];
 var songs
 var musicPlayer = new Audio();
+musicPlayer.oncanplaythrough = function(){
+    musicPlayer.play();
+}
 var cardHelper = {
     'tchaikovsky':{
         music: './assets/audio/Tchaikovsky.m4a',
@@ -58,6 +61,22 @@ var cardHelper = {
 
 }
 
+var preloadMusicArray = [];
+function initiatePreload(){
+    for(var key in cardHelper){
+        preloadMusic.push( cardHelper[key].music );
+    }
+}
+
+function preloadAudio( ){
+    if(!preloadMusicArray.length){
+        return;
+    }
+    var nextAudio = preloadMusicArray.pop();
+    var audio = new Audio();
+    audio.oncanplaythrough = preloadAudio;
+    audio.src = nextAudio;
+}
 
 function initializeApp() {
     //when the winModal replay button is clicked, the game is reset
@@ -65,6 +84,7 @@ function initializeApp() {
     cardCreation();
     //when a card is clicked, the handleCardClick function is called
     $(".card").click(handleCardClick);
+    initiatePreload();
 }
 function shuffle(array) {
     for (var cardIndex = array.length - 1; cardIndex > 0; cardIndex--) {
