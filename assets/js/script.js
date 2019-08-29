@@ -64,17 +64,21 @@ var cardHelper = {
 var preloadMusicArray = [];
 function initiatePreload(){
     for(var key in cardHelper){
-        preloadMusic.push( cardHelper[key].music );
+        preloadMusicArray.push( cardHelper[key].music );
     }
+    preloadAudio();
 }
 
 function preloadAudio( ){
     if(!preloadMusicArray.length){
+        console.log('done preloading')
         return;
     }
     var nextAudio = preloadMusicArray.pop();
+    console.log('preloading '+nextAudio);
     var audio = new Audio();
     audio.oncanplaythrough = preloadAudio;
+    audio.load();
     audio.src = nextAudio;
 }
 
