@@ -71,11 +71,9 @@ function initiatePreload(){
 
 function preloadAudio( ){
     if(!preloadMusicArray.length){
-        console.log('done preloading')
         return;
     }
     var nextAudio = preloadMusicArray.pop();
-    console.log('preloading '+nextAudio);
     var audio = new Audio();
     audio.oncanplaythrough = preloadAudio;
     audio.load();
