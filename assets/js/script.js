@@ -19,12 +19,12 @@ var cardHelper = {
         bio: 'he was a musician'
     },
     'mozart': {
-        music: './assets/audio/Mozart.mp3',
+        music: './assets/audio/Mozart.m4a',
         portrait: './assets/images/Mozart.png',
         bio: 'he was a musician'
     },
     'vivaldi': {
-        music: './assets/audio/Vivaldi.mp3',
+        music: './assets/audio/Vivaldi.m4a',
         portrait: './assets/images/Vivaldi.png',
         bio: 'he was a musician'
     },
