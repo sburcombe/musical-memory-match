@@ -104,9 +104,12 @@ function cardCreation(){
             })
         })
         shuffle(cards);
-    for(var cardIndex = 0; cardIndex < cards.length; cardIndex++){
+    for (var cardIndex = 0; cardIndex < cards.length; cardIndex++) {
         var imageUrl = cards[cardIndex];
-        var cardFront = $("<div>").addClass("front-card").css("background-image", "url(" + imageUrl + ")") //card class
+        var cardFront = $("<div>").addClass("front-card")
+        // .css("background-image", "url(" + imageUrl + ")") //card class
+        var cardContainer = $("<div>").addClass("card-container"); //new div
+        var cardImage = $("<img>").attr("src", imageUrl).addClass("composer-image");
         var cardBox = $("<div>").addClass("card");
         $.each(cardHelper, function (key, value) {
             if (value['portrait'] === imageUrl) {
@@ -115,9 +118,26 @@ function cardCreation(){
         })
         var cardBack = $("<div>").addClass("back-card "); //card class
         cardBox.append(cardFront);
-        $("div.container").append(cardBox);
+        cardFront.append(cardImage);
+        // cardFront.append("<img>")
+        $("div.container").append(cardContainer);
+        cardContainer.append(cardBox);
         cardBox.append(cardBack);
     }
+    // for(var cardIndex = 0; cardIndex < cards.length; cardIndex++){
+    //     var imageUrl = cards[cardIndex];
+    //     var cardFront = $("<div>").addClass("front-card").css("background-image", "url(" + imageUrl + ")") //card class
+    //     var cardBox = $("<div>").addClass("card");
+    //     $.each(cardHelper, function (key, value) {
+    //         if (value['portrait'] === imageUrl) {
+    //             cardBox.attr('data-card', key);
+    //         }
+    //     })
+    //     var cardBack = $("<div>").addClass("back-card "); //card class
+    //     cardBox.append(cardFront);
+    //     $("div.container").append(cardBox);
+    //     cardBox.append(cardBack);
+    // }
 
 }
 
@@ -137,8 +157,8 @@ function handleCardClick(event) {
         $(event.currentTarget).addClass("clicked");
         secondCardClicked = $(this);
         secondCardClicked.find("div.back-card").addClass("hidden");
-        var revealedCardClick1 = firstCardClicked.find("div.front-card").css("background-image");
-        var revealedCardClick2 = secondCardClicked.find("div.front-card").css("background-image");
+        var revealedCardClick1 = firstCardClicked.find("img").attr("src");
+        var revealedCardClick2 = secondCardClicked.find("img").attr("src");
 
 
         if (revealedCardClick1 === revealedCardClick2){

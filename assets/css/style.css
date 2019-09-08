@@ -1,5 +1,203 @@
+/* @media (min-width: 1182px) and (max-width: 1701px) { */
+
+  * {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../images/theater.png");
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+
+    /* overflow: hidden; */
+}
+header {
+    height: 5vh;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 3rem;
+    color: whitesmoke;
+    font-family: 'Beth Ellen', cursive, sans-serif;
+    margin-bottom: 20px;
+}
+header > p {
+    margin-top: 0;
+}
+.container {
+    width: 100%;
+  height: 100%;
+  right: 0;
+  display: inline-block;
+
+    /* margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+
+
+    /* background-image: url("../images/musicnotegif.gif"); */
+    /* background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: cover; */
+
+  }
+aside {
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    font-family: 'Beth Ellen', cursive, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+
+}
+
+aside > p {
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    margin-bottom: 1px;
+    opacity: 0.5;
+
+}
+
+#games-played{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.games-played-count {
+    margin: auto;
+}
+.stats-boxes{
+    margin: 5% auto;
+    vertical-align: bottom;
+    height: 4rem;
+    width: 7rem;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    opacity: 0.5;
+
+}
+main {
+    /* display: inline-block;
+    height: 100%;
+    width: 75%; */
+    height: 70vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 0;
+  display: flex;
+
+}
+.card-container {
+  width: 16.66%;
+  float: left;
+  height: 33.33%;
+  margin: auto;
+}
+
+.card {
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    position: relative;
+    cursor: pointer;
+    /* border-radius: 50%; */
+}
+
+.front-card, .back-card {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.back-card {
+  background-image: url("../images/sheetmusiccard.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.composer-image{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .front-card {
+    background-color: black;
+    background-size: cover;
+    height: 140px;
+
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    position: absolute;
+
+}
+
+.back-card{
+    background-image: url("../images/sheetmusiccard.jpg");
+    background-color:black;
+    background-size: cover;
+    height: 140px;
+
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    position: absolute;
+
+
+} */
+.modalShadow{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.winModal {
+    /* background-color: #5bc0de; */
+    background-image: url("../images/sheetMusic.jpeg");
+    font-family: 'Livvic', sans-serif;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+}
+.replayInvite{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* } */
 /*Smartphones horizontal*/
-* {
+/* * {
     box-sizing: border-box;
 }
 html, body {
@@ -24,9 +222,9 @@ header {
 header > p {
     margin: 0 auto;
 }
-.container {
-    margin: 5px 10px 10px 12px;
-    display: flex;
+.container { */
+    /* margin: 5px 10px 10px 12px; */
+    /* display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -85,10 +283,10 @@ main {
     width: 12%;
     padding: 5px;
     margin: 10px;
-    display: inline-block;
+    display: inline-block; */
     /* border-radius: 50%; */
 
-}
+/* }
 .front-card {
     background-color: black;
     background-size: cover;
@@ -97,24 +295,24 @@ main {
     padding: 2px;
     margin: 10px;
     display: inline-block;
-    position: absolute;
+    position: absolute; */
     /* border-radius: 50%; */
 
-}
+/* }
 
 .back-card{
     background-image: url("../images/sheetmusiccard.jpg");
     background-color:black;
-    background-size: cover;
-    height: 120px;/*100%*/
+    background-size: cover; */
+    /* height: 120px;
     width: 12%;
-    /* width: 150px;  */
+
     padding: 2px;
     margin: 10px;
     display: inline-block;
-    position: absolute;
+    position: absolute; */
     /* border-radius: 50%; */
-}
+/* }
 .card:hover > .back-card {
   transform: scale(1.04);
   transition: all .1s ease-in-out;
@@ -132,9 +330,9 @@ main {
     height: 100vh;
     width: 100vw;
 }
-.winModal {
+.winModal { */
     /* background-color: #5bc0de; */
-    background-image: url("../images/sheetMusic.jpeg");
+    /* background-image: url("../images/sheetMusic.jpeg");
     font-family: 'Livvic', sans-serif;
     font-weight: 700;
     color: black;
@@ -156,7 +354,7 @@ main {
 
 .hidden {
     display: none;
-}
+} */
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
@@ -180,12 +378,12 @@ main {
 
 @media (min-width: 1182px) and (max-width: 1701px) {
 
-  * {
+  /* * {
     box-sizing: border-box;
 }
-body {
+body { */
     /* background-image: url("../images/theater.png"); */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-color: black;
     background-position: center;
     background-size: cover;
@@ -209,14 +407,14 @@ header > p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     /* background-image: url("../images/musicnotegif.gif"); */
     /* background-repeat: no-repeat;
     background-color: black;
     background-position: center;
     background-size: cover; */
 
-  }
+  /* }
 aside {
     text-align: center;
     width: 20%;
@@ -262,41 +460,41 @@ main {
     width: 75%;
 }
 .card {
-    height: 140px;
+    height: 140px; */
     /* width: 12%; */
-    width: 150px;
+    /* width: 150px;
     padding: 10px;
     margin: 5px;
-    display: inline-block;
+    display: inline-block; */
     /* border-radius: 50%; */
-}
+/* }
 .front-card {
     background-color: black;
     background-size: cover;
-    height: 140px;
+    height: 140px; */
     /* width: 12%; */
-    width: 150px;
+    /* width: 150px;
     padding: 10px;
     margin: 5px;
     display: inline-block;
-    position: absolute;
+    position: absolute; */
     /* border-radius: 50%; */
-}
+/* }
 
 .back-card{
     background-image: url("../images/sheetmusiccard.jpg");
     background-color:black;
-    background-size: cover;
-    height: 140px;/*100%*/
-    /* width: 12%; */
+    background-size: cover; */
+    /* height: 140px;
+
     width: 150px;
     padding: 10px;
     margin: 5px;
     display: inline-block;
-    position: absolute;
+    position: absolute; */
     /* border-radius: 50%; */
 
-}
+/* }
 .modalShadow{
     position: fixed;
     background-color: rgba(0, 0, 0, .5);
@@ -305,9 +503,9 @@ main {
     height: 100vh;
     width: 100vw;
 }
-.winModal {
+.winModal { */
     /* background-color: #5bc0de; */
-    background-image: url("../images/sheetMusic.jpeg");
+    /* background-image: url("../images/sheetMusic.jpeg");
     font-family: 'Livvic', sans-serif;
     font-weight: 700;
     color: black;
@@ -325,10 +523,10 @@ main {
     padding: 30px;
     font-size: 20px;
     border-radius: 25px;
-}
+} */
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 }
