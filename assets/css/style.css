@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("../images/theater.png");
+    background-image: url("../images/theater_black.png");
     height: 100vh;
     margin: 0;
     background-repeat: no-repeat;
@@ -47,7 +47,30 @@ header > p {
     background-size: cover; */
 
   }
-aside {
+  /* .stats-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  height: 15vh;
+  width: 80vh;
+} */
+.stats-container {
+  background-color: gray;
+  height: 100%;
+    width: 94vw;
+    text-align: center;
+    border: 4px ridge gray;
+    border-radius: 10px;
+    opacity: .5;
+    margin-left: 3%;
+
+
+}
+.title, .stats-value{
+  display: inline-block;
+     font-family: 'Beth Ellen', cursive, sans-serif;
+}
+
+/* aside {
     text-align: center;
     width: 20%;
     vertical-align: top;
@@ -69,8 +92,8 @@ aside > p {
 #games-played{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center; */
+/* }
 .games-played-count {
     margin: auto;
 }
@@ -85,7 +108,7 @@ aside > p {
     border-radius: 25px;
     opacity: 0.5;
 
-}
+} */
 main {
     /* display: inline-block;
     height: 100%;
