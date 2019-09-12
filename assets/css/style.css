@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("../images/theater.png");
+    background-image: url("../images/theater_black.png");
     height: 100vh;
     margin: 0;
     background-repeat: no-repeat;
@@ -47,26 +47,29 @@ header > p {
     background-size: cover; */
 
   }
-  .stats-wrapper {
+  /* .stats-wrapper {
   display: flex;
   justify-content: space-evenly;
   height: 15vh;
-}
+  width: 80vh;
+} */
 .stats-container {
-  background-color: rgba(255, 205, 205, 0.418);
-  width: 40vw;
-  text-align: center;
-  border: 4px ridge rgb(233, 161, 161);
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: gray;
+  height: 100%;
+    width: 94vw;
+    text-align: center;
+    border: 4px ridge gray;
+    border-radius: 10px;
+    opacity: .5;
+    margin-left: 3%;
+
+
 }
 .title, .stats-value{
   display: inline-block;
+     font-family: 'Beth Ellen', cursive, sans-serif;
 }
-.stats-container {
-  height: 100%;
-  width: 100%;
-}
+
 /* aside {
     text-align: center;
     width: 20%;
