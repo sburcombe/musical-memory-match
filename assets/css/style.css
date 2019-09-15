@@ -65,6 +65,10 @@ header > p {
 
 
 }
+.stats-inner {
+    display: flex;
+    justify-content: space-around;
+}
 .title, .stats-value{
   display: inline-block;
      font-family: 'Beth Ellen', cursive, sans-serif;
