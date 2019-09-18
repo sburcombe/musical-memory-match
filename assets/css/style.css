@@ -51,6 +51,7 @@ main {
 .title, .stats-value{
      display: inline-block;
      font-family:  'Palatino', sans-serif;
+     font-size: 120%;
      color: white;
      font-weight: bold;
 }
@@ -128,4 +129,27 @@ main {
 
 .hidden {
     display: none;
+}
+/*----------- iPhone 6, 6S, 7 and 8 --------- */
+
+/*Portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px)
+and  (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    main{
+        height: 80vh;
+    }
+    .card-container {
+        width: 33.33%;
+        height: 16.67%;
+    }
+    .title, .stats-value{
+     display: inline-block;
+     font-family:  'Palatino', sans-serif;
+     font-size: 170%;
+     color: white;
+     font-weight: bold;
+    }
+    .stats-wrapper {
+        margin-top: 6%;
+    }
 }
