@@ -34,6 +34,9 @@ main {
   right: 0;
   display: inline-block;
 }
+.stats-wrapper{
+    margin-top: 2%;
+}
 .stats-container {
     background-color:rgba(191, 191, 191, .5);
     height: 100%;
@@ -41,7 +44,6 @@ main {
     text-align: center;
     border: 4px ridge gray;
     border-radius: 10px;
-    /* opacity: .5; */
     margin-left: 3%;
 }
 .stats-inner {
@@ -56,7 +58,7 @@ main {
      font-weight: bold;
 }
 main {
-    height: 70vh;
+  height: 70vh;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 0;
