@@ -1,6 +1,6 @@
 /* @media (min-width: 1182px) and (max-width: 1701px) { */
 
-  * {
+* {
     box-sizing: border-box;
 }
 body {
@@ -11,8 +11,6 @@ body {
     background-color: black;
     background-position: center;
     background-size: cover;
-
-
 }
 header {
     height: 5vh;
@@ -31,35 +29,31 @@ main {
     margin-top: 1%;
 }
 .container {
-    width: 100%;
+  width: 100%;
   height: 100%;
   right: 0;
   display: inline-block;
-
-  }
-
+}
 .stats-container {
-  background-color: gray;
-  height: 100%;
+    background-color:rgba(191, 191, 191, .5);
+    height: 100%;
     width: 94vw;
     text-align: center;
     border: 4px ridge gray;
     border-radius: 10px;
-    opacity: .5;
+    /* opacity: .5; */
     margin-left: 3%;
-
-
 }
 .stats-inner {
     display: flex;
     justify-content: space-around;
 }
 .title, .stats-value{
-  display: inline-block;
-     font-family: 'Beth Ellen', cursive, sans-serif;
+     display: inline-block;
+     font-family:  'Palatino', sans-serif;
+     color: white;
+     font-weight: bold;
 }
-
-
 main {
     height: 70vh;
   padding-left: 5%;
@@ -134,340 +128,4 @@ main {
 
 .hidden {
     display: none;
-}
-
-/* } */
-/*Smartphones horizontal*/
-/* * {
-    box-sizing: border-box;
-}
-html, body {
-    background-image: url("../images/theater_black.png");
-    background-repeat: no-repeat;
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-
-}
-header {
-    height: 5vh;
-    text-align: center;
-    width: 100%;
-    display: inline-block;
-    font-size: 2rem;
-    color: whitesmoke;
-    font-family: 'Beth Ellen', cursive, sans-serif;
-    margin-bottom: 20px;
-}
-header > p {
-    margin: 0 auto;
-}
-.container { */
-    /* margin: 5px 10px 10px 12px; */
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-
-  }
-aside {
-    text-align: center;
-    width: 20%;
-    height: 80vh;
-    vertical-align: top;
-    font-family: 'Beth Ellen', cursive, sans-serif;
-    font-size: 14px;
-    display: inline-block;
-
-
-}
-
-aside > p {
-    text-align: center;
-    background-color:whitesmoke;
-    border-radius: 50%;
-    margin-bottom: 1px;
-    margin-top: 0;
-    opacity: 0.5;
-
-}
-
-#games-played{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.games-played-count {
-    margin: auto;
-}
-.stats-boxes{
-    margin: 5% auto;
-    vertical-align: bottom;
-    height: 4rem;
-    width: 7rem;
-    background-color:whitesmoke;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    opacity: 0.5;
-
-}
-main {
-    display: inline-block;
-    height: 100%;
-    width: 75%;
-}
-.card {
-    height: 140px;
-    width: 12%;
-    padding: 5px;
-    margin: 10px;
-    display: inline-block; */
-    /* border-radius: 50%; */
-
-/* }
-.front-card {
-    background-color: black;
-    background-size: cover;
-    height: 120px;
-    width: 12%;
-    padding: 2px;
-    margin: 10px;
-    display: inline-block;
-    position: absolute; */
-    /* border-radius: 50%; */
-
-/* }
-
-.back-card{
-    background-image: url("../images/sheetmusiccard.jpg");
-    background-color:black;
-    background-size: cover; */
-    /* height: 120px;
-    width: 12%;
-
-    padding: 2px;
-    margin: 10px;
-    display: inline-block;
-    position: absolute; */
-    /* border-radius: 50%; */
-/* }
-.card:hover > .back-card {
-  transform: scale(1.04);
-  transition: all .1s ease-in-out;
-}
-
-.front-card, .back-card{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.modalShadow{
-    position: fixed;
-    background-color: rgba(0, 0, 0, .5);
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-}
-.winModal { */
-    /* background-color: #5bc0de; */
-    /* background-image: url("../images/sheetMusic.jpeg");
-    font-family: 'Livvic', sans-serif;
-    font-weight: 700;
-    color: black;
-    position: absolute;
-    text-align: center;
-    font-size: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 100px;
-}
-.replayInvite{
-    background-color: rgba(0, 0, 0, .5);
-    color: white;
-    padding: 30px;
-    font-size: 20px;
-    border-radius: 50%;
-}
-
-.hidden {
-    display: none;
-} */
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
-}
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-
-  //CSS
-
-}
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1182px) and (max-width: 1701px) {
-
-  /* * {
-    box-sizing: border-box;
-}
-body { */
-    /* background-image: url("../images/theater.png"); */
-    /* background-repeat: no-repeat;
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-}
-header {
-    height: 5vh;
-    text-align: center;
-    width: 100%;
-    display: inline-block;
-    font-size: 3rem;
-    color: whitesmoke;
-    font-family: 'Beth Ellen', cursive, sans-serif;
-    margin-bottom: 20px;
-}
-header > p {
-    margin-top: 0;
-}
-.container {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; */
-    /* background-image: url("../images/musicnotegif.gif"); */
-    /* background-repeat: no-repeat;
-    background-color: black;
-    background-position: center;
-    background-size: cover; */
-
-  /* }
-aside {
-    text-align: center;
-    width: 20%;
-    vertical-align: top;
-    font-family: 'Beth Ellen', cursive, sans-serif;
-    font-size: 14px;
-    display: inline-block;
-
-}
-
-aside > p {
-    text-align: center;
-    background-color: whitesmoke;
-    border-radius: 25px;
-    margin-bottom: 1px;
-    opacity: 0.5;
-
-}
-
-#games-played{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.games-played-count {
-    margin: auto;
-}
-.stats-boxes{
-    margin: 5% auto;
-    vertical-align: bottom;
-    height: 4rem;
-    width: 7rem;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    border-radius: 25px;
-    opacity: 0.5;
-
-}
-main {
-    display: inline-block;
-    height: 100%;
-    width: 75%;
-}
-.card {
-    height: 140px; */
-    /* width: 12%; */
-    /* width: 150px;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block; */
-    /* border-radius: 50%; */
-/* }
-.front-card {
-    background-color: black;
-    background-size: cover;
-    height: 140px; */
-    /* width: 12%; */
-    /* width: 150px;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
-    position: absolute; */
-    /* border-radius: 50%; */
-/* }
-
-.back-card{
-    background-image: url("../images/sheetmusiccard.jpg");
-    background-color:black;
-    background-size: cover; */
-    /* height: 140px;
-
-    width: 150px;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
-    position: absolute; */
-    /* border-radius: 50%; */
-
-/* }
-.modalShadow{
-    position: fixed;
-    background-color: rgba(0, 0, 0, .5);
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-}
-.winModal { */
-    /* background-color: #5bc0de; */
-    /* background-image: url("../images/sheetMusic.jpeg");
-    font-family: 'Livvic', sans-serif;
-    font-weight: 700;
-    color: black;
-    position: absolute;
-    text-align: center;
-    font-size: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 100px;
-}
-.replayInvite{
-    background-color: rgba(0, 0, 0, .5);
-    color: white;
-    padding: 30px;
-    font-size: 20px;
-    border-radius: 25px;
-} */
-
-/* .hidden {
-    display: none;
-} */
-
 }
