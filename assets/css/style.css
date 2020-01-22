@@ -35,7 +35,7 @@ main {
   display: inline-block;
 }
 .stats-wrapper{
-    margin-top: 2%;
+    margin-top: 3%;
 }
 .stats-container {
     background-color:rgba(191, 191, 191, .5);
@@ -87,12 +87,14 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /* border: 5px outset rgba(0,0,0,0.16); */
 }
 
 .back-card {
   background-image: url("../images/sheetmusiccard.jpg");
   background-position: center;
   background-size: cover;
+
 }
 
 .composer-image{
